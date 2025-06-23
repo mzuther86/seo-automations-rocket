@@ -19,7 +19,7 @@ export const Features = () => {
       icon: Link,
       title: "Backlink-Management",
       description: "Automatisiere den gesamten Backlink-Prozess – von der Recherche bis zur Erstellung von Backlink-Profilen.",
-      timeSaving: "60% Zeitersparnis"
+      timeSaving: "40% Zeitersparnis"
     },
     {
       icon: BarChart,
