@@ -2,22 +2,25 @@
 export const Testimonials = () => {
   const testimonials = [
     {
+      name: "Max Mustermann",
+      company: "SEO-Agentur XYZ",
+      content: "Wir haben die Effizienz unserer Agentur um 50% steigern können. SEO Automations hat uns von der zeitaufwendigen Recherche befreit!",
+      rating: 5,
+      improvement: "50% mehr Effizienz"
+    },
+    {
+      name: "Jane Doe",
+      company: "SEO-Agentur ABC",
+      content: "Dank der Automatisierung können wir nun mehr Kundenprojekte bearbeiten, ohne zusätzliche Mitarbeiter einstellen zu müssen.",
+      rating: 5,
+      improvement: "3x mehr Projekte"
+    },
+    {
       name: "Dr. Sarah Mueller",
-      company: "Digital Marketing Agentur",
-      content: "SEO Automations hat unsere Effizienz um 300% gesteigert. Die KI-gesteuerten Tools sind einfach unglaublich!",
-      rating: 5
-    },
-    {
-      name: "Thomas Weber",
-      company: "E-Commerce Unternehmen",
-      content: "Dank der Automatisierung konnten wir unsere organischen Rankings innerhalb von 3 Monaten verdoppeln.",
-      rating: 5
-    },
-    {
-      name: "Lisa Schmidt",
-      company: "Startup Gründerin",
-      content: "Als kleines Unternehmen war SEO immer eine Herausforderung. Diese Tools haben alles verändert!",
-      rating: 5
+      company: "Digital Marketing Profis",
+      content: "Die Tools haben unsere Arbeitsweise revolutioniert. Was früher Tage gedauert hat, schaffen wir jetzt in wenigen Stunden.",
+      rating: 5,
+      improvement: "70% Zeitersparnis"
     }
   ];
 
@@ -26,14 +29,18 @@ export const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Unsere Kunden lieben uns!
+            SEO-Agenturen weltweit vertrauen auf SEO Automations
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Hier ist, was sie sagen...
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
+            Erfolgsgeschichten von Agenturen, die ihre Prozesse verbessert und ihre Effizienz maximiert haben
           </p>
+          <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl p-6 inline-block">
+            <div className="text-3xl font-bold">95%</div>
+            <div className="text-sm opacity-90">der Kunden berichten von signifikanter Zeitersparnis</div>
+          </div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex mb-4">
@@ -43,13 +50,41 @@ export const Testimonials = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-slate-300 mb-6 italic">"{testimonial.content}"</p>
+              
+              <div className="mb-4">
+                <span className="bg-green-500/20 text-green-400 text-sm font-semibold px-3 py-1 rounded-full">
+                  {testimonial.improvement}
+                </span>
+              </div>
+              
+              <p className="text-slate-300 mb-6 italic text-lg">"{testimonial.content}"</p>
+              
               <div>
-                <p className="font-semibold text-white">{testimonial.name}</p>
+                <p className="font-semibold text-white text-lg">{testimonial.name}</p>
                 <p className="text-cyan-400">{testimonial.company}</p>
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center">
+          <div className="bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4">Durchschnittliche Ergebnisse unserer Kunden</h3>
+            <div className="grid grid-cols-3 gap-6">
+              <div>
+                <div className="text-3xl font-bold text-cyan-400">70%</div>
+                <div className="text-sm text-slate-300">Zeitersparnis</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-green-400">3x</div>
+                <div className="text-sm text-slate-300">Mehr Projekte</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-yellow-400">95%</div>
+                <div className="text-sm text-slate-300">Zufriedenheit</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

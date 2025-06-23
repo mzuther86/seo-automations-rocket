@@ -21,19 +21,20 @@ export const Hero = () => {
         
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Automatisiere Dein SEO mit{" "}
+          Optimierung für{" "}
           <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
-            KI
+            SEO-Agenturen
           </span>
         </h1>
         
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-slate-300 max-w-4xl mx-auto leading-relaxed">
-          Steigere Deine Sichtbarkeit und Effizienz mit SEO Automations
-        </p>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-slate-200">
+          Automatisiere Deine Workflows und spare bis zu{" "}
+          <span className="text-cyan-400 font-bold">70%</span> deiner Zeit!
+        </h2>
         
-        <p className="text-lg md:text-xl mb-12 text-slate-400 max-w-3xl mx-auto">
-          Nutze die Kraft der künstlichen Intelligenz und Automatisierung, um deine SEO-Strategien schneller und smarter umzusetzen. Wir bieten maßgeschneiderte Lösungen für dein Business.
+        {/* Subheadline */}
+        <p className="text-lg md:text-xl mb-12 text-slate-300 max-w-4xl mx-auto leading-relaxed">
+          Mit den leistungsstarken Automatisierungs-Tools von SEO Automations steigern SEO-Agenturen ihre Effizienz, reduzieren manuelle Arbeit und liefern schneller bessere Ergebnisse für ihre Kunden.
         </p>
         
         {/* CTA Button */}
@@ -41,8 +42,13 @@ export const Hero = () => {
           size="lg" 
           className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
         >
-          Kostenlose Demo anfordern
+          Kostenlose Demo starten
         </Button>
+        
+        {/* Trust indicator */}
+        <p className="mt-6 text-sm text-slate-400">
+          ✓ Keine Kreditkarte erforderlich ✓ Sofortiger Zugang
+        </p>
         
         {/* Floating elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl animate-pulse"></div>
