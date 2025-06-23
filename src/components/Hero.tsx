@@ -42,13 +42,8 @@ export const Hero = () => {
           size="lg" 
           className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
         >
-          Kostenlose Demo starten
+          Kostenlose Demo vereinbaren
         </Button>
-        
-        {/* Trust indicator */}
-        <p className="mt-6 text-sm text-slate-400">
-          ✓ Keine Kreditkarte erforderlich ✓ Sofortiger Zugang
-        </p>
         
         {/* Floating elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl animate-pulse"></div>

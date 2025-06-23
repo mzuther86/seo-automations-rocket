@@ -27,19 +27,6 @@ export const Testimonials = () => {
   return (
     <section className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            SEO-Agenturen weltweit vertrauen auf SEO Automations
-          </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
-            Erfolgsgeschichten von Agenturen, die ihre Prozesse verbessert und ihre Effizienz maximiert haben
-          </p>
-          <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl p-6 inline-block">
-            <div className="text-3xl font-bold">95%</div>
-            <div className="text-sm opacity-90">der Kunden berichten von signifikanter Zeitersparnis</div>
-          </div>
-        </div>
-        
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
