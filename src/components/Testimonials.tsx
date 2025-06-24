@@ -27,7 +27,7 @@ export const Testimonials = () => {
   return (
     <section className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex mb-4">
@@ -52,26 +52,6 @@ export const Testimonials = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Durchschnittliche Ergebnisse unserer Kunden</h3>
-            <div className="grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-3xl font-bold text-cyan-400">70%</div>
-                <div className="text-sm text-slate-300">Zeitersparnis</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-green-400">3x</div>
-                <div className="text-sm text-slate-300">Mehr Projekte</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-yellow-400">95%</div>
-                <div className="text-sm text-slate-300">Zufriedenheit</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

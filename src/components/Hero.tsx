@@ -13,7 +13,7 @@ export const Hero = () => {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img 
-            src="/lovable-uploads/85b43d6c-f63f-460b-a037-47f2680cbcd4.png" 
+            src="/lovable-uploads/new-logo.png" 
             alt="SEO Automations Logo" 
             className="h-24 w-auto"
           />
