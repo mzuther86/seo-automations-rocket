@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export const Contact = () => {
@@ -14,19 +13,6 @@ export const Contact = () => {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               Hast du Fragen oder möchtest du mehr erfahren? Unser Team steht bereit, dir zu helfen und deine SEO-Prozesse zu automatisieren!
             </p>
-            
-            <Button 
-              asChild
-              size="lg" 
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 mb-16"
-            >
-              <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
-                <div className="text-center">
-                  <div className="text-2xl font-bold">Kostenlose 30-Minuten Beratung</div>
-                  <div className="text-sm opacity-90">Analyse deiner aktuellen Prozesse + maßgeschneiderte Lösung</div>
-                </div>
-              </a>
-            </Button>
           </div>
           
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -61,7 +47,7 @@ export const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center">
+          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center mb-16">
             <h4 className="font-semibold mb-4 text-cyan-700">Warum mit uns sprechen?</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-slate-600">
               <div>✓ Kostenlose Analyse deiner aktuellen SEO-Prozesse</div>
@@ -69,6 +55,20 @@ export const Contact = () => {
               <div>✓ ROI-Berechnung für deine Agentur</div>
               <div>✓ Keine Verkaufsdrucktaktiken</div>
             </div>
+          </div>
+          
+          {/* Calendly Inline Widget */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div 
+              className="calendly-inline-widget" 
+              data-url="https://calendly.com/michael-jnh5/erstgesprach" 
+              style={{ minWidth: '320px', height: '700px' }}
+            ></div>
+            <script 
+              type="text/javascript" 
+              src="https://assets.calendly.com/assets/external/widget.js" 
+              async
+            ></script>
           </div>
         </div>
         

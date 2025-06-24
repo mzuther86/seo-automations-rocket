@@ -12,7 +12,7 @@ export const Header = () => {
               <img 
                 src="/lovable-uploads/3ecb5a70-ecfc-418e-b466-4934434244cd.png" 
                 alt="SEO Automations Logo" 
-                className="h-20 w-auto"
+                className="h-24 w-auto"
               />
             </a>
           </div>

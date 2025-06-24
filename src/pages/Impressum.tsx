@@ -19,8 +19,8 @@ const Impressum = () => {
             
             <h2>Kontakt</h2>
             <p>
-              Telefon: 0176 – 62457759<br />
-              E-Mail: mail@headsourcing.de
+              Telefon: 089-12014173<br />
+              E-Mail: mail@seo-automations.de
             </p>
             
             <h2>Umsatzsteuer-ID</h2>
