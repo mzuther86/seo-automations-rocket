@@ -1,5 +1,5 @@
 
-import { Search, FileText, Link, BarChart } from "lucide-react";
+import { Search, FileText, Link, BarChart, PenTool, TrendingUp } from "lucide-react";
 
 export const Features = () => {
   const features = [
@@ -16,10 +16,22 @@ export const Features = () => {
       timeSaving: "45% Zeitersparnis"
     },
     {
+      icon: PenTool,
+      title: "Content Erstellung",
+      description: "KI-gestützte Content-Erstellung für SEO-optimierte Texte, die deine Zielgruppe ansprechen und ranken.",
+      timeSaving: "60% Zeitersparnis"
+    },
+    {
       icon: Link,
       title: "Backlink-Management",
       description: "Automatisiere den gesamten Backlink-Prozess – von der Recherche bis zur Erstellung von Backlink-Profilen.",
       timeSaving: "40% Zeitersparnis"
+    },
+    {
+      icon: TrendingUp,
+      title: "Rank Tracking",
+      description: "Kontinuierliche Überwachung deiner Rankings mit automatischen Benachrichtigungen bei Veränderungen.",
+      timeSaving: "55% Zeitersparnis"
     },
     {
       icon: BarChart,
@@ -41,7 +53,7 @@ export const Features = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
               <div className="flex items-start gap-6">
@@ -64,7 +76,7 @@ export const Features = () => {
         
         <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Automatisierter Workflow-Prozess</h3>
-          <div className="grid md:grid-cols-4 gap-6 mt-8">
+          <div className="grid md:grid-cols-6 gap-6 mt-8">
             <div className="bg-white/10 rounded-xl p-4">
               <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
                 <span className="text-cyan-600 font-bold">1</span>
@@ -76,19 +88,33 @@ export const Features = () => {
               <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
                 <span className="text-cyan-600 font-bold">2</span>
               </div>
+              <h4 className="font-semibold mb-2">Content-Erstellung</h4>
+              <p className="text-sm opacity-90">KI-gestützte Texterstellung</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-4">
+              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
+                <span className="text-cyan-600 font-bold">3</span>
+              </div>
               <h4 className="font-semibold mb-2">Content-Optimierung</h4>
               <p className="text-sm opacity-90">Automatische Anpassungen</p>
             </div>
             <div className="bg-white/10 rounded-xl p-4">
               <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">3</span>
+                <span className="text-cyan-600 font-bold">4</span>
               </div>
               <h4 className="font-semibold mb-2">Backlink-Aufbau</h4>
               <p className="text-sm opacity-90">Intelligente Verlinkung</p>
             </div>
             <div className="bg-white/10 rounded-xl p-4">
               <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">4</span>
+                <span className="text-cyan-600 font-bold">5</span>
+              </div>
+              <h4 className="font-semibold mb-2">Rank Tracking</h4>
+              <p className="text-sm opacity-90">Kontinuierliche Überwachung</p>
+            </div>
+            <div className="bg-white/10 rounded-xl p-4">
+              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
+                <span className="text-cyan-600 font-bold">6</span>
               </div>
               <h4 className="font-semibold mb-2">Live-Analyse</h4>
               <p className="text-sm opacity-90">Kontinuierliche Optimierung</p>

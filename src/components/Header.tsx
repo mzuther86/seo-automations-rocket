@@ -8,11 +8,13 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/3ecb5a70-ecfc-418e-b466-4934434244cd.png" 
-              alt="SEO Automations Logo" 
-              className="h-12 w-auto"
-            />
+            <a href="/" className="hover:opacity-80 transition-opacity">
+              <img 
+                src="/lovable-uploads/3ecb5a70-ecfc-418e-b466-4934434244cd.png" 
+                alt="SEO Automations Logo" 
+                className="h-16 w-auto"
+              />
+            </a>
           </div>
           
           {/* CTA Button */}
