@@ -53,73 +53,23 @@ export const Features = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-start gap-6">
+              <div className="flex flex-col items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-xl font-bold text-slate-800">{feature.title}</h3>
-                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
-                      {feature.timeSaving}
-                    </span>
-                  </div>
-                  <p className="text-slate-600 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
+                  <p className="text-slate-600 leading-relaxed mb-4">{feature.description}</p>
+                  <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
+                    {feature.timeSaving}
+                  </span>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Automatisierter Workflow-Prozess</h3>
-          <div className="grid md:grid-cols-6 gap-6 mt-8">
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">1</span>
-              </div>
-              <h4 className="font-semibold mb-2">Keyword-Analyse</h4>
-              <p className="text-sm opacity-90">KI analysiert Suchtrends</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">2</span>
-              </div>
-              <h4 className="font-semibold mb-2">Content-Erstellung</h4>
-              <p className="text-sm opacity-90">KI-gestützte Texterstellung</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">3</span>
-              </div>
-              <h4 className="font-semibold mb-2">Content-Optimierung</h4>
-              <p className="text-sm opacity-90">Automatische Anpassungen</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">4</span>
-              </div>
-              <h4 className="font-semibold mb-2">Backlink-Aufbau</h4>
-              <p className="text-sm opacity-90">Intelligente Verlinkung</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">5</span>
-              </div>
-              <h4 className="font-semibold mb-2">Rank Tracking</h4>
-              <p className="text-sm opacity-90">Kontinuierliche Überwachung</p>
-            </div>
-            <div className="bg-white/10 rounded-xl p-4">
-              <div className="w-8 h-8 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
-                <span className="text-cyan-600 font-bold">6</span>
-              </div>
-              <h4 className="font-semibold mb-2">Live-Analyse</h4>
-              <p className="text-sm opacity-90">Kontinuierliche Optimierung</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

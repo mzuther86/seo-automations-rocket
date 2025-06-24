@@ -64,7 +64,7 @@ export const Timeline = () => {
           
           <div className="relative">
             {/* Animated Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-1 bg-slate-200 rounded-full">
+            <div className="absolute right-8 top-0 bottom-0 w-1 bg-slate-200 rounded-full">
               <div 
                 className="w-full bg-gradient-to-b from-cyan-500 to-teal-500 rounded-full transition-all duration-300 ease-out"
                 style={{ height: `${scrollProgress * 100}%` }}
@@ -75,13 +75,8 @@ export const Timeline = () => {
             <div className="space-y-12">
               {steps.map((step, index) => (
                 <div key={index} className="relative flex items-start">
-                  {/* Icon Circle */}
-                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg">
-                    <step.icon className="w-8 h-8 text-white" />
-                  </div>
-                  
                   {/* Content */}
-                  <div className="ml-8 bg-white rounded-2xl shadow-lg p-8 border border-slate-200 flex-1">
+                  <div className="mr-8 bg-white rounded-2xl shadow-lg p-8 border border-slate-200 flex-1">
                     <div className="flex items-center mb-4">
                       <span className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white text-sm font-bold px-3 py-1 rounded-full mr-4">
                         Schritt {index + 1}
@@ -89,6 +84,11 @@ export const Timeline = () => {
                     </div>
                     <h3 className="text-xl font-bold mb-4 text-slate-800">{step.title}</h3>
                     <p className="text-slate-600 leading-relaxed">{step.description}</p>
+                  </div>
+                  
+                  {/* Icon Circle */}
+                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg">
+                    <step.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
               ))}

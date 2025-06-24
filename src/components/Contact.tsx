@@ -14,18 +14,17 @@ export const Contact = () => {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               Hast du Fragen oder möchtest du mehr erfahren? Unser Team steht bereit, dir zu helfen und deine SEO-Prozesse zu automatisieren!
             </p>
-            <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl p-6 inline-block text-white mb-12">
-              <div className="text-2xl font-bold">Kostenlose 30-Minuten Beratung</div>
-              <div className="text-sm opacity-90">Analyse deiner aktuellen Prozesse + maßgeschneiderte Lösung</div>
-            </div>
-
+            
             <Button 
               asChild
               size="lg" 
               className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 mb-16"
             >
               <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
-                Kostenlose Beratung anfragen
+                <div className="text-center">
+                  <div className="text-2xl font-bold">Kostenlose 30-Minuten Beratung</div>
+                  <div className="text-sm opacity-90">Analyse deiner aktuellen Prozesse + maßgeschneiderte Lösung</div>
+                </div>
               </a>
             </Button>
           </div>
@@ -37,7 +36,7 @@ export const Contact = () => {
               </div>
               <div>
                 <h4 className="font-semibold mb-2 text-cyan-600">E-Mail</h4>
-                <p className="text-slate-700 font-medium">agentur@seo-automations.de</p>
+                <p className="text-slate-700 font-medium">mail@seo-automations.de</p>
               </div>
             </div>
             
