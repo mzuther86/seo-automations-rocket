@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/", // oder z. B. "/seo-automations-rocket/" bei Subdomains
+  base: "/", 
   server: {
     host: "::",
     port: 8080,
