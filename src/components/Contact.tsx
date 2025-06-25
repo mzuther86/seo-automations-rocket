@@ -38,7 +38,7 @@ export const Contact = () => {
             <div 
               className="calendly-inline-widget" 
               data-url="https://calendly.com/michael-jnh5/erstgesprach" 
-              style={{ minWidth: '320px', height: '700px' }}
+              style={{ minWidth: '320px', height: '850px' }}
             ></div>
           </div>
           
