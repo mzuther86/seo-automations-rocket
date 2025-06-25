@@ -7,22 +7,13 @@
     <title>SEO Automations</title>
     <script>
       // GitHub Pages SPA redirect script
-      // This script takes the current page's URL and redirects to the main page
-      // with the route information in the query string
-      (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
+      // Store the current path for React Router to handle
+      var l = window.location;
+      var redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname + l.search;
+      sessionStorage.setItem('redirect', redirect);
+      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/#' + l.pathname + l.search);
     </script>
   </head>
   <body>
-    <script>
-      // Store the current path and redirect to main page
-      sessionStorage.redirect = location.href;
-      location.replace('/');
-    </script>
   </body>
 </html>
