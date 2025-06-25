@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -12,7 +11,7 @@ export const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">        
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Optimierung für{" "}
+          Prozessoptimierung für{" "}
           <span className="bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
             SEO-Agenturen
           </span>

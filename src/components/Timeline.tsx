@@ -75,8 +75,8 @@ export const Timeline = () => {
             <div className="space-y-12">
               {steps.map((step, index) => (
                 <div key={index} className="relative flex items-start">
-                  {/* Icon Circle */}
-                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg mr-8">
+                  {/* Icon Circle - Fixed positioning for mobile */}
+                  <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg mr-8 flex-shrink-0">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
                   
