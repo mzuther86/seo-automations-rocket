@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Automations</title>
+    <script>
+      // GitHub Pages SPA redirect script
+      // This script takes the current page's URL and redirects to the main page
+      // with the route information in the query string
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <script>
+      // Store the current path and redirect to main page
+      sessionStorage.redirect = location.href;
+      location.replace('/');
+    </script>
+  </body>
+</html>
