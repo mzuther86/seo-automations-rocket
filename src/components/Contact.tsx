@@ -24,7 +24,7 @@ export const Contact = () => {
     <section className="py-20 bg-gradient-to-br from-slate-100 to-cyan-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800">
               Bereit, deine Agentur zu transformieren?
             </h2>
@@ -38,11 +38,11 @@ export const Contact = () => {
             <div 
               className="calendly-inline-widget" 
               data-url="https://calendly.com/michael-jnh5/erstgesprach" 
-              style={{ minWidth: '320px', height: '600px' }}
+              style={{ minWidth: '320px', height: '700px' }}
             ></div>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid lg:grid-cols-3 gap-8 mb-8">
             <div className="bg-white rounded-xl p-8 flex flex-col items-center gap-4 shadow-lg border border-slate-200 text-center">
               <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center">
                 <Mail className="w-8 h-8 text-white" />
@@ -74,7 +74,7 @@ export const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center">
+          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center mb-8">
             <h4 className="font-semibold mb-4 text-cyan-700">Warum mit uns sprechen?</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-slate-600">
               <div>✓ Kostenlose Analyse deiner aktuellen SEO-Prozesse</div>
@@ -86,7 +86,7 @@ export const Contact = () => {
         </div>
         
         {/* Footer */}
-        <div className="mt-8 pt-8 border-t border-slate-300 text-center text-slate-600">
+        <div className="pt-8 border-t border-slate-300 text-center text-slate-600">
           <div className="flex justify-center space-x-6 text-sm">
             <a href="/impressum" className="hover:text-cyan-600 transition-colors">Impressum</a>
             <a href="/datenschutz" className="hover:text-cyan-600 transition-colors">Datenschutz</a>
