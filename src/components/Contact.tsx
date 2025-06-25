@@ -1,6 +1,7 @@
 
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
   useEffect(() => {
@@ -28,11 +29,20 @@ export const Contact = () => {
               Bereit, deine Agentur zu transformieren?
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-              Hast du Fragen oder möchtest du mehr erfahren? Unser Team steht bereit, dir zu helfen und deine SEO-Prozesse zu automatisieren!
+              Buche dir hier direkt einen kostenlosen Analyse-Call:
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {/* Calendly Inline Widget */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div 
+              className="calendly-inline-widget" 
+              data-url="https://calendly.com/michael-jnh5/erstgesprach" 
+              style={{ minWidth: '320px', height: '600px' }}
+            ></div>
+          </div>
+          
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-xl p-8 flex flex-col items-center gap-4 shadow-lg border border-slate-200 text-center">
               <div className="w-16 h-16 bg-cyan-500 rounded-xl flex items-center justify-center">
                 <Mail className="w-8 h-8 text-white" />
@@ -64,7 +74,7 @@ export const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center mb-12">
+          <div className="bg-gradient-to-r from-cyan-500/10 to-teal-500/10 rounded-xl p-8 border border-cyan-200 text-center">
             <h4 className="font-semibold mb-4 text-cyan-700">Warum mit uns sprechen?</h4>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-slate-600">
               <div>✓ Kostenlose Analyse deiner aktuellen SEO-Prozesse</div>
@@ -72,15 +82,6 @@ export const Contact = () => {
               <div>✓ ROI-Berechnung für deine Agentur</div>
               <div>✓ Keine Verkaufsdrucktaktiken</div>
             </div>
-          </div>
-          
-          {/* Calendly Inline Widget */}
-          <div className="max-w-4xl mx-auto mb-8">
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/michael-jnh5/erstgesprach" 
-              style={{ minWidth: '320px', height: '700px' }}
-            ></div>
           </div>
         </div>
         
