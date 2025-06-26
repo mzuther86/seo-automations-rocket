@@ -15,12 +15,21 @@ const queryClient = new QueryClient();
 const App = () => {
   useEffect(() => {
     // Handle GitHub Pages redirect
-    const redirect = sessionStorage.getItem('redirect');
-    if (redirect) {
-      sessionStorage.removeItem('redirect');
-      const url = new URL(redirect);
-      if (url.pathname !== '/') {
-        window.history.replaceState(null, null, url.pathname + url.search);
+    const l = window.location;
+    
+    // Check if we have a redirect parameter
+    if (l.search) {
+      const query = new URLSearchParams(l.search);
+      const p = query.get('p');
+      
+      if (p) {
+        // Restore the original path
+        const newPath = p.replace(/~and~/g, '&');
+        const q = query.get('q');
+        const newSearch = q ? '?' + q.replace(/~and~/g, '&') : '';
+        
+        // Replace the current history entry
+        window.history.replaceState(null, '', newPath + newSearch + l.hash);
       }
     }
   }, []);
