@@ -14,22 +14,12 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Handle GitHub Pages redirect
+    // Handle GitHub Pages redirect - only process once
     const l = window.location;
-    
-    // Check if we have a redirect parameter
-    if (l.search) {
-      const query = new URLSearchParams(l.search);
-      const p = query.get('p');
-      
-      if (p) {
-        // Restore the original path
-        const newPath = p.replace(/~and~/g, '&');
-        const q = query.get('q');
-        const newSearch = q ? '?' + q.replace(/~and~/g, '&') : '';
-        
-        // Replace the current history entry
-        window.history.replaceState(null, '', newPath + newSearch + l.hash);
+    if (l.search && l.search.startsWith('?/')) {
+      const path = l.search.slice(2).replace(/~and~/g, '&');
+      if (path && path !== window.location.pathname.slice(1)) {
+        window.history.replaceState(null, '', '/' + path + l.hash);
       }
     }
   }, []);
