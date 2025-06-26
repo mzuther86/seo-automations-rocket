@@ -2,6 +2,7 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Contact = () => {
   useEffect(() => {
@@ -88,8 +89,8 @@ export const Contact = () => {
         {/* Footer */}
         <div className="pt-8 border-t border-slate-300 text-center text-slate-600">
           <div className="flex justify-center space-x-6 text-sm">
-            <a href="/impressum" className="hover:text-cyan-600 transition-colors">Impressum</a>
-            <a href="/datenschutz" className="hover:text-cyan-600 transition-colors">Datenschutz</a>
+            <Link to="/impressum" className="hover:text-cyan-600 transition-colors">Impressum</Link>
+            <Link to="/datenschutz" className="hover:text-cyan-600 transition-colors">Datenschutz</Link>
           </div>
         </div>
       </div>
