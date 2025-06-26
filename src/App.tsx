@@ -14,11 +14,11 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    // Handle GitHub Pages redirect - only process once
+    // Handle GitHub Pages redirect - simple version
     const l = window.location;
     if (l.search && l.search.startsWith('?/')) {
       const path = l.search.slice(2).replace(/~and~/g, '&');
-      if (path && path !== window.location.pathname.slice(1)) {
+      if (path) {
         window.history.replaceState(null, '', '/' + path + l.hash);
       }
     }
