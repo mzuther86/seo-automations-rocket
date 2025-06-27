@@ -1,5 +1,6 @@
 
 import { Header } from "../components/Header";
+import { Contact } from "../components/Contact";
 
 const Impressum = () => {
   return (
@@ -51,6 +52,7 @@ const Impressum = () => {
           </div>
         </div>
       </div>
+      <Contact />
     </div>
   );
 };
