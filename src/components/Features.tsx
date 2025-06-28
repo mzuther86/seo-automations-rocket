@@ -43,7 +43,7 @@ export const Features = () => {
 
   return (
     <section className="py-20 bg-slate-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800">
             Hauptfunktionen von SEO Automations für Agenturen
@@ -56,11 +56,11 @@ export const Features = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-slate-200 hover:shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
-              <div className="flex flex-col items-start gap-6">
+              <div className="flex flex-col items-center md:items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 text-center md:text-left">
                   <h3 className="text-xl font-bold text-slate-800 mb-3">{feature.title}</h3>
                   <p className="text-slate-600 leading-relaxed mb-4">{feature.description}</p>
                   <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">

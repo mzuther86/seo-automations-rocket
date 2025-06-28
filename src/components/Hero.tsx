@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -8,7 +9,7 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.2),transparent_70%)]"></div>
       </div>
       
-      <div className="container mx-auto px-6 text-center relative z-10">        
+      <div className="container mx-auto px-4 md:px-6 text-center relative z-10">        
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           Prozessoptimierung für{" "}
@@ -23,20 +24,22 @@ export const Hero = () => {
         </h2>
         
         {/* Subheadline */}
-        <p className="text-lg md:text-xl mb-12 text-slate-600 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl mb-12 text-slate-600 max-w-4xl mx-auto leading-relaxed px-4">
           Mit den leistungsstarken Automatisierungs-Tools von SEO Automations steigern SEO-Agenturen ihre Effizienz, reduzieren manuelle Arbeit und liefern schneller bessere Ergebnisse für ihre Kunden.
         </p>
         
         {/* CTA Button */}
-        <Button 
-          asChild
-          size="lg" 
-          className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
-        >
-          <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
-            Kostenlose Demo vereinbaren
-          </a>
-        </Button>
+        <div className="flex justify-center px-4">
+          <Button 
+            asChild
+            size="lg" 
+            className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-8 md:px-12 py-6 text-lg md:text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 w-full max-w-sm md:w-auto"
+          >
+            <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
+              Kostenlose Demo vereinbaren
+            </a>
+          </Button>
+        </div>
         
         {/* Floating elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl animate-pulse"></div>

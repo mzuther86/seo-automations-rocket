@@ -28,7 +28,7 @@ export const Benefits = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800">
@@ -52,16 +52,18 @@ export const Benefits = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
-            <Button 
-              asChild
-              size="lg" 
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
-            >
-              <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
-                Kostenlose Demo vereinbaren
-              </a>
-            </Button>
+          <div className="text-center px-4">
+            <div className="flex justify-center">
+              <Button 
+                asChild
+                size="lg" 
+                className="bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-8 md:px-12 py-6 text-lg md:text-xl font-semibold rounded-full shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 w-full max-w-sm md:w-auto"
+              >
+                <a href="https://calendly.com/michael-jnh5/erstgesprach" target="_blank" rel="noopener noreferrer">
+                  Kostenlose Demo vereinbaren
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
