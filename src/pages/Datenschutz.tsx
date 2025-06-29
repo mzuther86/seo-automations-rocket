@@ -205,12 +205,6 @@ const Datenschutz = () => {
         </div>
       </div>
       <Contact />
-      <div className="pt-8 border-t border-slate-300 text-center text-slate-600">
-        <div className="flex justify-center space-x-6 text-sm">
-          <a href="/#/impressum" className="hover:text-cyan-600 transition-colors">Impressum</a>
-          <a href="/#/datenschutz" className="hover:text-cyan-600 transition-colors">Datenschutz</a>
-        </div>
-      </div>
     </div>
   );
 };
