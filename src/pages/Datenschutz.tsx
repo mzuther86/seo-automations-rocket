@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Header } from "../components/Header";
 import { Contact } from "../components/Contact";
 
 const Datenschutz = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-white">
       <Header />
